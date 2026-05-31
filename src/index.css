@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.book-shadow {
+  box-shadow:
+    20px 20px 60px #d1d9e6,
+    -20px -20px 60px #ffffff;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(2, 36, 72, 0.1);
+}
+
+.author-card:hover img {
+  transform: scale(1.05);
+}
+
+img {
+  transition: transform 0.5s ease;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
