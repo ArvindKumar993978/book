@@ -1,22 +1,17 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Categories from "./components/Categories";
-import FeaturedBooks from "./components/FeaturedBooks";
-import Authors from "./components/Authors";
-import Newsletter from "./components/Newsletter";
-import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import AuthorProfile from "./pages/AuthorProfile";
+// import Authors from "./pages/Authors";
+import BookDetailPage from "./pages/BookDetailPage";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Categories />
-      <FeaturedBooks />
-      <Authors />
-      <Newsletter />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/AuthorProfile" element={<AuthorProfile />} />
+      {/* <Route path="/authors" element={<Authors />} /> */}
+      <Route path="/BookDetailPage" element={<BookDetailPage />} />
+    </Routes>
   );
 }
 

@@ -1,0 +1,50 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.headerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menuBtn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.rightSection {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.iconBtn,
+.cartBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}

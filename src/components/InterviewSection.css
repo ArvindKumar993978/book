@@ -1,0 +1,47 @@
+.interview {
+  padding: 80px 0;
+}
+
+.interview-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Desktop layout */
+@media (min-width: 1024px) {
+  .interview-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.interview-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #111827;
+}
+
+.interview-text {
+  color: #4b5563;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.interview-quote {
+  background-color: #f3f4f6;
+  padding: 24px;
+  border-radius: 12px;
+  font-style: italic;
+  color: #111827;
+}
+
+.interview-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}

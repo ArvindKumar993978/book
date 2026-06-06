@@ -1,42 +1,41 @@
 import React from "react";
 import { books } from "../data/books";
+import "./FeaturedBooks.css";
 
 const FeaturedBooks = () => {
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="featured-books-section">
+      <div className="featured-books-container">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold text-slate-900">
+        <div className="featured-books-header">
+          <h3 className="featured-books-title">
             Featured Arrivals
           </h3>
-          <p className="text-gray-500 mt-2">
+          <p className="featured-books-subtitle">
             Hand-picked selections for our readers
           </p>
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="featured-books-grid">
           {books.map((book) => (
-            <div
-              key={book.id}
-              className="group bg-white rounded-xl shadow-sm hover:shadow-xl transition overflow-hidden"
-            >
+            <div key={book.id} className="book-card">
               {/* Image */}
-              <div className="relative overflow-hidden aspect-[3/4]">
+              <div className="book-image-wrapper">
                 <img
                   src={book.image}
                   alt={book.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                  className="book-image"
                 />
 
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-4">
-                  <button className="bg-white p-3 rounded-full">
+                <div className="book-overlay">
+                  <button className="book-action-btn">
                     <span className="material-symbols-outlined">
                       shopping_bag
                     </span>
                   </button>
-                  <button className="bg-white p-3 rounded-full">
+
+                  <button className="book-action-btn">
                     <span className="material-symbols-outlined">
                       favorite
                     </span>
@@ -45,26 +44,28 @@ const FeaturedBooks = () => {
               </div>
 
               {/* Content */}
-              <div className="p-4 space-y-2">
-                <p className="text-xs text-orange-500 uppercase tracking-widest">
+              <div className="book-content">
+                <p className="book-category">
                   {book.category}
                 </p>
 
-                <h4 className="font-semibold text-slate-900">
+                <h4 className="book-title">
                   {book.title}
                 </h4>
 
-                <p className="text-gray-500 text-sm">{book.author}</p>
+                <p className="book-author">
+                  {book.author}
+                </p>
 
-                <div className="flex justify-between items-center pt-3 border-t">
-                  <div className="flex items-center gap-1">
-                    <span className="material-symbols-outlined text-yellow-500 text-sm">
+                <div className="book-footer">
+                  <div className="book-rating">
+                    <span className="material-symbols-outlined star-icon">
                       star
                     </span>
-                    <span className="text-sm">{book.rating}</span>
+                    <span>{book.rating}</span>
                   </div>
 
-                  <p className="font-semibold text-slate-900">
+                  <p className="book-price">
                     {book.price}
                   </p>
                 </div>

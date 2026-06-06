@@ -1,10 +1,10 @@
-import Navbar from "../../bookverse/src/components/Navbar";
-import Hero from "../../bookverse/src/components/Hero";
-import Categories from "../../bookverse/src/components/Categories";
-import FeaturedBooks from "../../bookverse/src/components/FeaturedBooks";
-import Authors from "../../bookverse/src/components/Authors";
-import Newsletter from "../../bookverse/src/components/Newsletter";
-import Footer from "../../bookverse/src/components/Footer";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import Categories from "../components/Categories";
+import FeaturedBooks from "../components/FeaturedBooks";
+import Authors from "../components/Authors";
+import Newsletter from "../components/Newsletter";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (

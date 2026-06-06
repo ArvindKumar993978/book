@@ -1,0 +1,52 @@
+/* Full screen overlay */
+.drawerOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 50;
+}
+
+/* Drawer base */
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 288px; /* w-72 = 18rem = 288px */
+  background: white;
+  z-index: 50;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+/* Open state */
+.drawer.open {
+  transform: translateX(0);
+}
+
+/* Content */
+.drawerContent {
+  padding: 24px;
+}
+
+.drawerTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.drawerNav {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.drawerNav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.drawerNav a:hover {
+  color: #1e3a8a;
+}

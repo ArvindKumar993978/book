@@ -1,50 +1,44 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
-      <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
-        <div className="flex items-center gap-3">
-          <button className="md:hidden text-slate-900">
+    <header className="navbar">
+      <nav className="navbar-container">
+        {/* Logo & Mobile Menu */}
+        <div className="navbar-left">
+          <button className="menu-btn">
             <span className="material-symbols-outlined">menu</span>
           </button>
 
-          <h1 className="text-3xl lg:text-5xl font-bold text-slate-900">
-            BookVerse
-          </h1>
+          <h1 className="navbar-logo">BookVerse</h1>
         </div>
 
-        <div className="hidden md:flex items-center gap-8">
-          <a href="#" className="font-semibold border-b-2 border-orange-500">
+        {/* Navigation Links */}
+        <div className="navbar-links">
+          <Link to="/" className="active-link">
             Home
-          </a>
+          </Link>
 
-          <a href="#" className="hover:text-blue-900">
-            Categories
-          </a>
+          <Link to="/Categories">Categories</Link>
 
-          <a href="#" className="hover:text-blue-900">
-            Authors
-          </a>
-
-          <a href="#" className="hover:text-blue-900">
-            Best Sellers
-          </a>
+          <Link to="/AuthorProfile">Authors</Link>
+          <Link to="/BookDetailPage">Best Sellers</Link >
         </div>
 
-        <div className="flex items-center gap-5">
-          <button>
-            <span className="material-symbols-outlined">search</span>
+        {/* Actions */}
+        <div className="navbar-actions">
+          <button className="icon-btn">
+            <span className="material-symbols-outlined">🔍</span>
           </button>
 
-          <button className="relative">
+          <button className="icon-btn cart-btn">
             <span className="material-symbols-outlined">
-              shopping_cart
+              🛒
             </span>
 
-            <span className="absolute -top-1 -right-1 bg-orange-500 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
-              3
-            </span>
+            <span className="cart-badge">3</span>
           </button>
         </div>
       </nav>

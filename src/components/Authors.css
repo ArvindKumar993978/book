@@ -1,0 +1,100 @@
+.authors-section {
+  padding: 80px 0;
+  background-color: #0f172a;
+  color: white;
+}
+
+.authors-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.authors-header {
+  margin-bottom: 48px;
+}
+
+.authors-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.authors-subtitle {
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
+.authors-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.author-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 32px;
+  text-align: center;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.author-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.author-image-wrapper {
+  width: 112px;
+  height: 112px;
+  margin: 0 auto 24px;
+  border: 2px solid #f97316;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.author-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.author-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.author-field {
+  color: #fb923c;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.author-description {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-top: 16px;
+  line-height: 1.6;
+}
+
+.author-btn {
+  margin-top: 24px;
+  padding: 10px 20px;
+  border: 1px solid #f97316;
+  background: transparent;
+  color: #fb923c;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.author-btn:hover {
+  background: #f97316;
+  color: white;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .authors-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

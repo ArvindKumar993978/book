@@ -1,33 +1,34 @@
 import React from "react";
+import "./Newsletter.css";
 
 const Newsletter = () => {
   return (
-    <section className="py-20 relative overflow-hidden bg-white">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <div className="bg-slate-50 p-12 rounded-3xl shadow-lg">
-          <span className="material-symbols-outlined text-orange-500 text-5xl">
+    <section className="newsletter-section">
+      <div className="newsletter-container">
+        <div className="newsletter-card">
+          <span className="material-symbols-outlined newsletter-icon">
             mail
           </span>
 
-          <h3 className="text-3xl font-bold mt-4">
+          <h3 className="newsletter-title">
             Join Our Literary Community
           </h3>
 
-          <p className="text-gray-500 mt-3">
+          <p className="newsletter-description">
             Subscribe for book recommendations, author interviews and more.
           </p>
 
           <form
-            className="flex flex-col sm:flex-row gap-4 mt-8"
+            className="newsletter-form"
             onSubmit={(e) => e.preventDefault()}
           >
             <input
               type="email"
               placeholder="Your email address"
-              className="flex-1 p-4 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500"
+              className="newsletter-input"
             />
 
-            <button className="bg-slate-900 text-white px-8 py-4 rounded-md hover:bg-slate-800">
+            <button className="newsletter-btn">
               Subscribe
             </button>
           </form>

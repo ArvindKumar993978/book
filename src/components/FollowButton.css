@@ -1,0 +1,23 @@
+.follow-btn {
+  padding: 12px 24px;
+  border-radius: 9999px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Default state (blue-900) */
+.not-following {
+  background-color: #1e3a8a;
+}
+
+/* Following state (amber-600) */
+.following {
+  background-color: #d97706;
+}
+
+/* Hover effect */
+.follow-btn:hover {
+  transform: scale(1.05);
+}

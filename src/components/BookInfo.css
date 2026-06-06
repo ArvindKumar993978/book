@@ -1,0 +1,59 @@
+.book-info {
+  grid-column: span 7;
+}
+
+.book-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e3a8a; /* blue-900 */
+  margin-bottom: 8px;
+}
+
+.book-author {
+  color: #4b5563; /* gray-600 */
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.book-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e40af; /* blue-800 */
+}
+
+.book-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Primary button (Add to Cart) */
+.btn.primary {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+}
+
+.btn.primary:hover {
+  background-color: #1e40af;
+}
+
+/* Secondary button (Buy Now) */
+.btn.secondary {
+  background-color: transparent;
+  border: 1px solid #1e3a8a;
+  color: #1e3a8a;
+}
+
+.btn.secondary:hover {
+  background-color: #eff6ff;
+}

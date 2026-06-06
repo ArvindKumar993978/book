@@ -1,0 +1,21 @@
+.book-gallery {
+  grid-column: span 5;
+}
+
+.book-image-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.book-image-wrapper:hover .book-image {
+  transform: scale(1.05);
+}

@@ -1,20 +1,20 @@
 import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-100 pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+    <footer className="footer">
+      <div className="footer-container">
         {/* Brand */}
-        <div className="lg:col-span-2">
-          <h2 className="text-3xl font-bold text-slate-900">
-            BookVerse
-          </h2>
-          <p className="text-gray-600 mt-4 max-w-sm">
+        <div className="footer-brand">
+          <h2 className="footer-logo">BookVerse</h2>
+
+          <p className="footer-description">
             Elevating the digital reading experience with curated
             collections and modern design.
           </p>
 
-          <div className="flex gap-4 mt-4 text-gray-500">
+          <div className="footer-social">
             <span className="material-symbols-outlined">share</span>
             <span className="material-symbols-outlined">
               alternate_email
@@ -24,11 +24,10 @@ const Footer = () => {
         </div>
 
         {/* Links */}
-        <div>
-          <h5 className="font-semibold text-slate-900 mb-3">
-            Quick Links
-          </h5>
-          <ul className="space-y-2 text-gray-600">
+        <div className="footer-column">
+          <h5>Quick Links</h5>
+
+          <ul>
             <li>Search Books</li>
             <li>Best Sellers</li>
             <li>New Arrivals</li>
@@ -36,11 +35,10 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
-          <h5 className="font-semibold text-slate-900 mb-3">
-            Customer Service
-          </h5>
-          <ul className="space-y-2 text-gray-600">
+        <div className="footer-column">
+          <h5>Customer Service</h5>
+
+          <ul>
             <li>Shipping Policy</li>
             <li>Return Center</li>
             <li>FAQ</li>
@@ -48,12 +46,10 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
-          <h5 className="font-semibold text-slate-900 mb-3">
-            Contact
-          </h5>
+        <div className="footer-column">
+          <h5>Contact</h5>
 
-          <ul className="space-y-2 text-gray-600 text-sm">
+          <ul className="footer-contact">
             <li>📍 123 Reader St, NY</li>
             <li>📧 hello@bookverse.com</li>
             <li>📞 +1 (234) 567-890</li>
@@ -61,10 +57,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t text-sm text-gray-500 flex flex-col md:flex-row justify-between gap-4">
+      {/* Bottom Footer */}
+      <div className="footer-bottom">
         <p>© 2024 BookVerse. All rights reserved.</p>
 
-        <div className="flex gap-6">
+        <div className="footer-bottom-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
         </div>
