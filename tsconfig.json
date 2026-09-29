@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler"  // ✅ replaces deprecated "Node"
+  },
+  "include": ["vite.config.ts"]
+}
